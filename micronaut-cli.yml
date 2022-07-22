@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.chai.apps.polling
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, data, data-jpa, flyway, gradle, hibernate-validator, http-client, jackson-databind, jdbc-hikari, junit, kotlin, kotlin-application, kotlin-build, logback, mariadb, micronaut-build, netty-server, readme, shade, testcontainers, yaml]
