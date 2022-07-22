@@ -1,16 +1,30 @@
 micronaut:
   application:
-    name: micronautPolling
+    name: MN-Polling Application
+
 datasources:
   default:
-    url: jdbc:mariadb://localhost:3306/db
+    url: jdbc:mariadb://localhost:3306/mp-polling
     driverClassName: org.mariadb.jdbc.Driver
     username: root
     password: ''
     schema-generate: CREATE_DROP
     dialect: MYSQL
-jpa.default.properties.hibernate.hbm2ddl.auto: update
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+        show_sql: true
+
 netty:
   default:
     allocator:
       max-order: 3
+
+flyway:
+  datasources:
+    default:
+      enabled: true
